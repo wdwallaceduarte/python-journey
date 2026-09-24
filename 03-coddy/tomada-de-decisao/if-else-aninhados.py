@@ -1,31 +1,31 @@
-# age = int(input("Digite sua idade: "))
+'''age = int(input("Digite sua idade: "))
 
-# with_parent = input() == 'true'
+with_parent = input() == 'true'
 
-# message = 'None'
+message = 'None'
 
-# if age >= 18:
-#     message = "You can watch any movie"
-# else:
-#     if with_parent:  
-#         message = "You can watch PG-13 movies"
-#     else:
-#         message = "You can only watch G-rated movies"
+if age >= 18:
+    message = "You can watch any movie"
+else:
+    if with_parent:  
+        message = "You can watch PG-13 movies"
+    else:
+        message = "You can only watch G-rated movies"
 
-# print(message)
+print(message)
 
-# b1 = 5
-# b2 = 2
-# b3 = not((b1 + b2) > (b1 * b2))
+b1 = 5
+b2 = 2
+b3 = not((b1 + b2) > (b1 * b2))
 
-# print(f'b3 = {b3}')
+print(f'b3 = {b3}')'''
 #====================================================
 
 # Note que x e y devem conter números inteiros positivos ou negativos.
 
 print('='*45)
 print(""" 
-    \033[1;32mENQUANTO (z) NÃO FOR TRUE REPETE 
+    \033[1;32m ENQUANTO (z) NÃO FOR TRUE REPETE 
 z = ((x * y) < (x + y) && (x + y) < (x - y))\033[m
 """)
 print('='*45)
