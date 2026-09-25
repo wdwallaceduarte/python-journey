@@ -1,11 +1,6 @@
 # Escreva um programa que solicite ao usuário um número e , em seguida, utilize um loop for para calcular o fatorial desse número
 
 
-
-
-
-
-
 def calcular_fatorial(n):
     fatorial = 1
     for i in range(1, n + 1):
