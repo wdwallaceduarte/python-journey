@@ -1,7 +1,7 @@
 # Listas guardam varios valores, mas diferente das tuplas representadas por (), as listas representadas por [], podem ser alteradas, as tuplas não. Tuplas são imultaveis e as listas podem ser modificadas.
 
 lanche = ['🍔', '🧃', '🍕', '🍦']
-# key =     0,    1      2     3
+# key =     0     1      2     3
 
 ## MANIPULAÇÃO DE LISTA
 # Comando/método que adciona item/valores a lisata
@@ -11,7 +11,8 @@ lanche.insert(0,'impada') # Adciona um valor/item indicando a sua key, nesse cas
 # Comandos que deletam item/valores da lista
 del lanche[3] # Remove o valor/item da lista usando a key, nesse caso a key '3' será deletado.
 lanche.pop(3) # Método pop removo o último valor/item da lista, mas pode pode usar o parâmetro key, nesse caso o '3'
-lanche.remove('🍕') #Metedo remove pelo valor/item da lista, logo o valor deve ser informado.
+lanche.remove('🍕') # Metedo remove pelo valor/item da lista, logo o valor deve ser informado.
+lanche.clear() # Remove tudo da lista
 
 # print(lanche)
 # Para verificar se o valor/item existe na lista
