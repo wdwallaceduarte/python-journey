@@ -13,7 +13,11 @@
 `Expotenciação (**)`  
 
 
-# Função de formatação (Tratativa de erro)
+# Função de formatação (Tratativa de erro) - Retorna alguma coisa
 
 `.strip()` - Remove espaços em branco  
 `.lower()` - Tranforma a string em minusculo  
+
+# Metodo - executa alguma coisa mas não retorna nada 
+
+
