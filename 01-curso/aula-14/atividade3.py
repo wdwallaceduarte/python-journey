@@ -1,13 +1,5 @@
 # Faça um program que peça as quatro notas de 10 alunos, calcule e armazene em um vetor a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0
 
-# notas = [[], [], [], []]
-
-# for nome in range(2):
-#     notas.append(input('Nome do aluno: '))
-#     for nota in range(1, 5):
-#         notas[nota].append(input(f'Digite a {nota}° nota: '))
-# print(notas)
-
 
 medias = []
 
