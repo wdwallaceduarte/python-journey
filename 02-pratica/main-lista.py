@@ -11,7 +11,7 @@ lanche.insert(0,'impada') # Adciona um valor/item indicando a sua key, nesse cas
 # Comandos que deletam item/valores da lista
 del lanche[3] # Remove o valor/item da lista usando a key, nesse caso a key '3' será deletado.
 lanche.pop(3) # Método pop removo o último valor/item da lista, mas pode pode usar o parâmetro key, nesse caso o '3'
-lanche.remove('🍕') # Metedo remove pelo valor/item da lista, logo o valor deve ser informado.
+lanche.remove('🍕') # wMetedo remove pelo valor/item da lista, logo o valor deve ser informado.
 lanche.clear() # Remove tudo da lista
 
 # print(lanche)
