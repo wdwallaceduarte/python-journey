@@ -1,0 +1,23 @@
+Um problema do cotidiano que afeta milhões de pessoas em centros urbanos, e que pode ser drasticamente melhorado por um software, é a gestão de desperdício e a validade de alimentos na despensa doméstica.
+Muitas pessoas compram comida, guardam nos armários ou na geladeira e acabam descobrindo que o produto venceu ou estragou semanas depois. Isso gera prejuízo financeiro direto e desperdício de recursos.
+A solução ideal seria um aplicativo mobile chamado provisoriamente de "SmartPantry" (Despensa Inteligente).
+## Como o Software Resolveria Isso no Cotidiano
+
+* Entrada de Dados Automatizada: Em vez de digitar produto por produto, o usuário usa a câmera do celular para escanear o código de barras ou a nota fiscal eletrônica (QR Code) da compra. O software identifica automaticamente os itens e extrai a data de validade recomendada.
+* Alertas Inteligentes de Vencimento: O aplicativo envia notificações push personalizáveis (ex: "O leite condensado vence em 3 dias" ou "Seu frango congelado está no freezer há 2 meses, consuma logo").
+* Sugestão de Receitas Baseada no Inventário: O sistema cruza os ingredientes que estão mais próximos do vencimento e sugere receitas práticas para utilizá-los, evitando que vão para o lixo.
+* Lista de Compras Dinâmica: Quando um item acaba ou está perto do fim, o software o adiciona automaticamente a uma lista de compras integrada, evitando compras em duplicidade (comprar algo que você já tinha no fundo do armário).
+* Compartilhamento Familiar: O inventário da cozinha fica salvo na nuvem, permitindo que todas as pessoas da casa saibam exatamente o que tem na geladeira antes de passarem no supermercado voltando do trabalho.
+
+## Impacto Real no Dia a Dia
+
+* Economia financeira: Redução de até 20% nos gastos mensais com supermercado apenas eliminando o descarte de alimentos vencidos.
+* Sustentabilidade: Redução da pegada de carbono doméstica ao diminuir o lixo orgânico.
+* Ganho de tempo: Fim do processo de abrir a geladeira e ficar pensando "o que eu vou cozinhar com o que tem aqui dentro hoje?".
+
+Para estruturar melhor essa ideia para você, me conta:
+
+* Você prefere focar em um aplicativo voltado para o consumidor final ou adaptá-lo para pequenos negócios (como restaurantes e mercadinhos de bairro)?
+* Que tipo de tecnologia de desenvolvimento você tem mais familiaridade? (ex: React Native, Flutter, Python para o backend)
+
+
