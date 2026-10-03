@@ -14,6 +14,6 @@ valor_total = conta + valor_gorjeta
 
 valor_por_pessoa = valor_total / n_pessoas
 
-print('='*40)
+print('=-'*30)
 print(f'Total (gorjeta incluso): R$ {valor_total}')
 print(f'Cada pessoa paga: R$ {valor_por_pessoa}')
