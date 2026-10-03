@@ -11,7 +11,7 @@ while opcao != 3:
     ================================
     ***********  MENU **************
     ================================ 
-    1 -> Adcionar item
+    1 -> Adicionar item
     2 -> Ver lista
     3 -> Sair
     """)
@@ -23,11 +23,11 @@ while opcao != 3:
     elif opcao == 2:        # Visualizar lista (RF02)
         print('=-'*15)
         if len(lista_compras) == 0:
-            print('Sua lista está vazia!')
+            print('\33[32mSua lista está vazia!\33[0m')
         else:
             print('=-'*30)
-            print(f'Sua lista contem os seguintes itens:\n {lista_compras}')
+            print(f'Sua lista contem os seguintes itens:\n \33[32m{lista_compras}\33[0m')
             print('=-'*30)
     else:                   # Encerrar programa (RF04)
         print('=-'*15)
-        print('Programa encerrado!\n')
+        print('\33[32mPrograma encerrado!\n\33[32m')
