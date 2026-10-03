@@ -55,8 +55,8 @@ python-journey/
 # Padrão de Mensagens de Commit (Conventional Commits)
 
 - `feat:` - Movo exercício/projeto  
-- `fix:` - Correção de código  
-- `docs:`- Aleteração em README  
+- `fix:`  - Correção de código  
+- `docs:` - Aleteração em README  
 - `refactor:` - Melhora código sem mudar comportamento  
 - `chore:` - Tarefas de organização (criar pasta, etc...)  
 

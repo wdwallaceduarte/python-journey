@@ -8,6 +8,7 @@
 # Operadores Aritimeticos
 `Soma (+)`  
 `Subtração (-)`  
+`Divisão (/)`
 `Divisão inteira (//)`  
 `Modulo (%)`  
 `Expotenciação (**)`  
@@ -19,5 +20,22 @@
 `.lower()` - Tranforma a string em minusculo  
 
 # Metodo - executa alguma coisa mas não retorna nada 
+
+## ANSI escape sequence
+- abertura -> `\33[...m`  
+- fechamento -> `\033[0m`
+```plaintext
+style           Text             Back
+0 - none         30 - branco ---- 40  
+1 - Bold         31 - vermelho -- 41  
+4 - Underline    32 - verde ----- 42
+7 - Negative     33 - amarelo --- 43
+                 34 - azul ------ 44  
+                 35 - roxo ------ 45
+                 36 - ciano ----- 46
+                 37 - cinza ----- 47  
+
+```
+
 
 
