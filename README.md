@@ -50,6 +50,7 @@ python-journey/
 - [x] Condicionais
 - [x] Laços de repetição
 - [ ] Funções
+- [ ] Dicionarios
 
 
 # Padrão de Mensagens de Commit (Conventional Commits)
