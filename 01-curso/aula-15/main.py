@@ -54,12 +54,12 @@ while opcao != 5:
         if 0 <= indice < len(lista_compras):
             item_removido = lista_compras.pop(indice)
             print(f'Item {item_removido} removido da lista.')
-    elif opcao == 5:
-        print('\33[32mSaindo...\n\33[32m')
-        break
-    else:                   # Encerrar programa (RF04)
+    elif opcao == 5: # Encerrar programa (RF04)
+        print('\33[32mSaindo...\n\33[0m')
+        # break
+    else:                   
         print('=-'*15)
         print('Opção inválida, escolha uma opção válida.')
 else:
-        print('\33[32mPrograma encerrado!\n\33[32m')
+    print('\33[32mPrograma encerrado!\n\33[32m')
 
