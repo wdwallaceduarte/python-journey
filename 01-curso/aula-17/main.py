@@ -54,22 +54,22 @@ def funcao_escopo_retorno():
 var_retorna = funcao_escopo_retorno()
 print('Retorno dora da função: ', var_retorna)"""
 
-# def soma(num1, num2):
-#    return num1 + num2
+def soma(num1, num2):
+   return num1 + num2
 
-# def subitrair(num1, num2):
-#     return num1 - num2
+def subitrair(num1, num2):
+    return num1 - num2
 
-# def multiplicar(num1, num2):
-#     return num1 * num2
+def multiplicar(num1, num2):
+    return num1 * num2
 
-# def dividir(num1, num2):
-#     return num1 / num2
+def dividir(num1, num2):
+    return num1 / num2
 
-# print(soma(10, 5))
-# print(subitrair(10, 5))
-# print(multiplicar(10, 5))
-# print(dividir(10, 5))
+print(soma(10, 5))
+print(subitrair(10, 5))
+print(multiplicar(10, 5))
+print(dividir(10, 5))
 
 
 
