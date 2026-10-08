@@ -49,7 +49,7 @@ python-journey/
 - [x] Variáveis e tipos
 - [x] Condicionais
 - [x] Laços de repetição
-- [ ] Funções
+- [x] Funções
 - [ ] Dicionarios
 
 
