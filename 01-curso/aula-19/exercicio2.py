@@ -1,0 +1,1 @@
+# Acesse e imprimia valores especificos do dicionário que você cricou no exercicio anterior
