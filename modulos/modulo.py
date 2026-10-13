@@ -1,7 +1,7 @@
 def cabeca(msg):
-    print('\33[32m=\33[0m' * 30)
-    print('\33[32m{:^30}\33[0m'.format(msg))
-    print('\33[32m=\33[0m' * 30)
+    print('\33[30m=\33[0m' * 30)
+    print('\33[30m{:^30}\33[0m'.format(msg))
+    print('\33[30m=\33[0m' * 30)
 
 def cabecalho(*msg):
     texto = ' '.join(msg)

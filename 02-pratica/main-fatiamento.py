@@ -27,7 +27,7 @@ print(completo.count('w'))
 print(nome.upper())
 # '.lower()' faz toda a string ficar minuscula 
 print(nome.lower())
-# '.en()' usado pra descobri o tamnho da string contando com os espaços
+# '.len()' usado pra descobri o tamaho da string contando com os espaços
 print(len(nome))
 print(len(completo))
 # '.strip() é um metodo que remove os espaços antes e depois da string
