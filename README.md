@@ -51,6 +51,7 @@ python-journey/
 - [x] Laços de repetição
 - [x] Funções
 - [ ] Dicionarios
+- [ ] Banco de Dados
 
 
 # Padrão de Mensagens de Commit (Conventional Commits)
