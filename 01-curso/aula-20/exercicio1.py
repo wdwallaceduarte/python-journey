@@ -4,12 +4,15 @@ import os # Biblioteca para fazer a função de verficar se o arquivo existe.
 
 def criar_arquivo():
     # Verifica se o arquivo já existe para não apagar o conteúdo anterior
-    if os.path.exists("meu_arquivo.txt"): # Uso da biblioteca 
-        print("\nAviso - O arquivo já existe!")
-    else:
-        arquivo = open("meu_arquivo.txt", "w", encoding="utf-8")
-        arquivo.close()
-        print("\nSucesso - Arquivo criado com o conteúdo inicial!")
+    try:
+        if os.path.exists("meu_arquivo.txt"): # Uso da biblioteca 
+            print("\nAviso - O arquivo já existe!")
+        else:
+            arquivo = open("meu_arquivo.txt", "w", encoding="utf-8")
+            arquivo.close()
+            print("\nSucesso - Arquivo criado com o conteúdo inicial!")
+    except Exception as e:
+        print(f'\nErro ao encontrar o arquivo: {e}')
         
 def ler_arquivo():
     arquivo = open("meu_arquivo.txt", "r", encoding="utf-8")

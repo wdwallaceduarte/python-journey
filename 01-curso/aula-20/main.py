@@ -29,3 +29,11 @@ except FileNotFoundError:
 except Exception as e:
     print(f'Erro ao ler arquivo: {e}')
 
+
+try:
+    # Tente executar isto
+    print(10 / 0)
+
+except ZeroDivisionError:
+    # Se acontecer este erro, faça isto
+    print("Erro: divisão por zero!")
