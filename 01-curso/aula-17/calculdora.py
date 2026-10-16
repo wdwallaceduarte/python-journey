@@ -1,6 +1,9 @@
-print('='*30)
-print('        CALCULADORA')
-print('='*30)
+from modulos.interface import cabecalho
+
+cabecalho('CALCULADORA')
+# print('='*30)
+# print('\33[1;30;42m         CALCULADORA          \33[0m')
+# print('='*30)
 print()
 
 def calcular(num1, num2, op):

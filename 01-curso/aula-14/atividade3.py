@@ -11,6 +11,7 @@ while len(medias) < 10:
     n3 = float(input('Nota 3: '))
     n4 = float(input('Nota 4: '))
     medias.append((n1 + n2 + n3 + n4) / 4)
+    print(medias)
 aprovados = 0
 for m in medias:
     if m >= 7.0:
