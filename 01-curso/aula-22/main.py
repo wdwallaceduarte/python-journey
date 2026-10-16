@@ -1,0 +1,3 @@
+import uteis
+
+uteis.escreva()
