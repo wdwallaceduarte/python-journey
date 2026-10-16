@@ -2,7 +2,7 @@
 
 # from uteis import escreva
 import uteis
-from modulos import escreva
+from modulos import escreva # Está dando erro
 escreva('testando')
 uteis.escreva('Controlde de Frequência')
 
