@@ -1,4 +1,4 @@
-# FATEAMENTO, ANALISE E TRANSFORMAÇÃO DE UMA STRING
+# FATiAMENTO, ANALISE E TRANSFORMAÇÃO DE UMA STRING
 
 nome = 'wallace'
 #key =  0123456 
@@ -15,7 +15,7 @@ print(completo[8:17])
 # usado quando não se sabe o tamanho final da strint
 print(completo[8:])
 # Traz as letras de 1 a 15 pulando de 2 em 2
-print(completo[1:15:2])
+print(completo[1:15:2]) # completo[inicio:fim:passo]
 #Traz de 1 ao final da string pulando de 2 em 2
 print(completo[1::2])
 
