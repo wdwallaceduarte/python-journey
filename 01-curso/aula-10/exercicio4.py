@@ -8,6 +8,6 @@ def calcular_fatorial(n):
     return fatorial
 
 # Testando a função com o número 5
-numero = int(input('Digite um número: 50'))
+numero = int(input('Digite um número: '))
 resultado = calcular_fatorial(numero)
 print(f"O fatorial de {numero} é {resultado}.")
