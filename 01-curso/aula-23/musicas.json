@@ -1,0 +1,32 @@
+[
+  {
+    "usuario": "Ana",
+    "musica": "Song A",
+    "duracao_segundos": 180,
+    "genero": "Pop"
+  },
+  {
+    "usuario": "Bruno",
+    "musica": "Song B",
+    "duracao_segundos": 240,
+    "genero": "Rock"
+  },
+  {
+    "usuario": "Ana",
+    "musica": "Song C",
+    "duracao_segundos": 210,
+    "genero": "Pop"
+  },
+  {
+    "usuario": "Carlos",
+    "musica": "Song D",
+    "duracao_segundos": 300,
+    "genero": "Jazz"
+  },
+  {
+    "usuario": "Ana",
+    "musica": "Song E",
+    "duracao_segundos": 120,
+    "genero": "Rock"
+  }
+]
