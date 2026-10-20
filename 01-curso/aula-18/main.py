@@ -1,7 +1,7 @@
-# Dicionario
-# Sintaxe:
-# nome_dicionario = {'chave':valor, chave:valor} 
-
+""" # Dicionario
+    # Sintaxe:
+     nome_dicionario = {'chave':valor, 'chave':valor} 
+ """
 dicionario = {
 
     'nome': 'Wallace', 
@@ -30,9 +30,9 @@ chaves = dicionario.keys()
 valores = dicionario.values()
 duplas = dicionario.items()
 
-print(chaves)
-print(valores)
-print(duplas)
+print(f'Retorna as chaves do dicionario:\n {chaves}')
+print(f'Retorna os valoes do dicionario:\n {valores}')
+print(f"Retorna duplas:\n {duplas}")
 
     
 print()

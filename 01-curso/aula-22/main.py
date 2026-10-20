@@ -1,3 +1,0 @@
-import uteis
-
-uteis.escreva()
