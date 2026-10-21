@@ -50,7 +50,8 @@ python-journey/
 - [x] Condicionais
 - [x] Laços de repetição
 - [x] Funções
-- [ ] Dicionarios
+- [x] Dicionarios
+- [ ] Tratamento de erros e Exceções
 - [ ] Banco de Dados
 
 
