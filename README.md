@@ -51,7 +51,7 @@ python-journey/
 - [x] Laços de repetição
 - [x] Funções
 - [x] Dicionarios
-- [ ] Tratamento de erros e Exceções
+- [x] Tratamento de erros e Exceções
 - [ ] Banco de Dados
 
 
@@ -61,7 +61,8 @@ python-journey/
 - `fix:`  - Correção de código  
 - `docs:` - Aleteração em README  
 - `refactor:` - Melhora código sem mudar comportamento  
-- `chore:` - Tarefas de organização (criar pasta, etc...)  
+- `chore:` - Tarefas de organização (criar pasta, etc...) 
+- `chore`  - remover arquivos não utilizados
 
 ## Exemplos
 ```
