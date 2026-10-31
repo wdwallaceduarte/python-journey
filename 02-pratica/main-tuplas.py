@@ -2,6 +2,12 @@
 lanche = ('hamburguer', 'suco', 'pizza', 'pudim')
 #  key =      0            1        2        3
 
+print(""" 
+    lanche = ('hamburguer', 'suco', 'pizza', 'pudim')
+    #  key =      0            1        2        3
+    
+ """)
+
 # imprime a 'pizza'
 print(lanche[0]) 
 print(lanche[2]) #imprime 'pizza'
@@ -44,3 +50,6 @@ print(lanche[3])
 # O metodo 'sorted()' Mostra a ordem alfabetica ou numerica se for o caso
 print(sorted(lanche)) 
 print(lanche) # apenas para comparação
+
+# o metodo count(), conta quantas vezes um elemento aparece na tupla
+print(lanche.count('suco'))

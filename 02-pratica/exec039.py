@@ -11,9 +11,9 @@ ano_atual = date.today().year
 ano_nas = int(input('\n Ano de nascimento? '))
 sexo = input('\n Qual o sexo (M/F): ')
 
-if sexo == 'fF':
+if sexo == 'f':
     print('\nMulheres não são obrigadorio ao alistamento.')
-elif sexo == 'mM':
+elif sexo == 'm':
     idade = ano_atual - ano_nas
     print(f'\nQuem nasceu em {ano_nas} tem {idade} anos em {ano_atual}.')
 

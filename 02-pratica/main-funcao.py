@@ -1,7 +1,12 @@
 """ # Sintaxe da função
     
-    def nome_da_função(parametro):
-        # Bloco de código 
+    # Declaração da função
+    def function_name():
+        # Corpo da função (identado)
+        code_here
+
+    # Chamada da função
+    function_name()
 """
     
 # Função que cria uma linha 
