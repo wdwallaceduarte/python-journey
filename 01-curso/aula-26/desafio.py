@@ -81,7 +81,7 @@ def listar_filmes(conexao):
 
 def pesquisar_filme(conexao):
     try:
-        print('Digite o nome do filme que deseja buscar.')
+        print('Digite o nome do filme que deseja buscar.\n')
         nome = input('Título: \n> ')
 
         cursor = conexao.cursor()
@@ -128,11 +128,12 @@ while True:
         6 - Sair
     """)
     opcao = input('> ')
+    print()
 
     if opcao == '0':
         criar_tabela(conexao)
     elif opcao == '1':
-        print('\nVamos adicionar um novo filme.')
+        print('Vamos adicionar um novo filme.')
         add_filme(conexao)
     elif opcao == '2':
         listar_filmes(conexao)

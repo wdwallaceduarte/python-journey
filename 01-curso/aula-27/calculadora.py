@@ -234,3 +234,8 @@ resultado_label.pack(pady=10)
 # 8. Mantendo a janela aberta
 root.mainloop()
 
+
+
+
+
+

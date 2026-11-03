@@ -18,7 +18,8 @@ def inserir_dados():
     disciplina = input("Curso: ")
     cursor.execute('''
         INSERT INTO Alunos (NOME, IDADE, CURSO) VALUES(?,?,?);''',
-                   (nome, idade, disciplina))
+                   (nome, idade, disciplina)
+    )
 
     conexao.commit()
 
@@ -46,7 +47,7 @@ def deletar_dados(id_aluno):
     #     "DELETE FROM alunos WHERE id = ?",
     #     (id_aluno,)
     # )
-    #   ********
+    # #  ********
     # if cursor.rowcount > 0:
     #     conexao.commit()
     #     print("Aluno deletado com sucesso!")
@@ -61,12 +62,10 @@ def deletar_dados(id_aluno):
         print('Valor invalido')
     else:
         cursor.execute(""" 
-            DELETE FROM alunos WHERE id ? """, (id_del,)
+            DELETE FROM alunos WHERE id ? """, (id_aluno,)
         )
 
-
 def atualizar_dados(id_aluno, atualizar_nome, atualizar_idade, atualizar_curso):
-    pass
     cursor.execute(""" 
         UPDATE alunos
         SET nome = ?, idade = ?, curso = ? 
@@ -87,11 +86,11 @@ while True:
     if opcao == "1":
         inserir_dados()
     elif opcao == "2":
-        consultar_dados()''
+        consultar_dados()
     elif opcao == "3":
         deletar_dados(input('ID do Aluno: '))
     elif opcao == "4":
-                id_aluno = int(input('ID do Aluno: ')
+                id_aluno = int(input('ID do Aluno: '),
         atualizar_dados(), input('Novo nome: '), int(input('Nova idade: ')), input('Atualizar curso: '))
     else:
         print("opcao invalida")
@@ -103,118 +102,118 @@ while True:
         
         
  
-import sqlite3
+# import sqlite3
 
 
-# 1. Conectar ao banco de dados
-def conectar_banco():
-    try:
-        conexao = sqlite3.connect("filmes.db")
-        print("Banco de dados conectado com sucesso!")
-        return conexao
+# # 1. Conectar ao banco de dados
+# def conectar_banco():
+#     try:
+#         conexao = sqlite3.connect("filmes.db")
+#         print("Banco de dados conectado com sucesso!")
+#         return conexao
 
-    except sqlite3.Error as erro:
-        print(f"Erro ao conectar ao banco: {erro}")
-        return None
-
-
-# 2. Criar a tabela de filmes
-def criar_tabela(conexao):
-    try:
-        cursor = conexao.cursor()
-
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS filmes (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                titulo TEXT NOT NULL,
-                ano INTEGER,
-                duracao INTEGER,
-                nota REAL
-            )
-        """)
-
-        conexao.commit()
-        print("Tabela de filmes criada com sucesso!")
-
-    except sqlite3.Error as erro:
-        print(f"Erro ao criar a tabela: {erro}")
+#     except sqlite3.Error as erro:
+#         print(f"Erro ao conectar ao banco: {erro}")
+#         return None
 
 
-# 3. Adicionar um novo filme
-def add_filme(conexao):
-    try:
-        titulo = input("Título:\n> ")
-        ano = int(input("Ano:\n> "))
-        duracao = int(input("Duração em minutos:\n> "))
-        nota = 0.0
+# # 2. Criar a tabela de filmes
+# def criar_tabela(conexao):
+#     try:
+#         cursor = conexao.cursor()
 
-        cursor = conexao.cursor()
+#         cursor.execute("""
+#             CREATE TABLE IF NOT EXISTS filmes (
+#                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+#                 titulo TEXT NOT NULL,
+#                 ano INTEGER,
+#                 duracao INTEGER,
+#                 nota REAL
+#             )
+#         """)
 
-        cursor.execute("""
-            INSERT INTO filmes (titulo, ano, duracao, nota)
-            VALUES (?, ?, ?, ?)
-        """, (titulo, ano, duracao, nota))
+#         conexao.commit()
+#         print("Tabela de filmes criada com sucesso!")
 
-        conexao.commit()
-        print("Filme adicionado com sucesso!")
-
-    except ValueError:
-        print("Erro: ano e duração devem ser números inteiros.")
-
-    except sqlite3.Error as erro:
-        print(f"Erro ao adicionar filme: {erro}")
+#     except sqlite3.Error as erro:
+#         print(f"Erro ao criar a tabela: {erro}")
 
 
-# 4. Programa principal
-conexao = conectar_banco()
+# # 3. Adicionar um novo filme
+# def add_filme(conexao):
+#     try:
+#         titulo = input("Título:\n> ")
+#         ano = int(input("Ano:\n> "))
+#         duracao = int(input("Duração em minutos:\n> "))
+#         nota = 0.0
 
-if conexao is not None:
+#         cursor = conexao.cursor()
 
-    criar_tabela(conexao)
+#         cursor.execute("""
+#             INSERT INTO filmes (titulo, ano, duracao, nota)
+#             VALUES (?, ?, ?, ?)
+#         """, (titulo, ano, duracao, nota))
 
-    while True:
-        print("""
-        ===== MENU DE FILMES =====
+#         conexao.commit()
+#         print("Filme adicionado com sucesso!")
 
-        0 - Criar tabela de filmes
-        1 - Adicionar novo filme
-        2 - Listar todos os filmes
-        3 - Pesquisar filme
-        4 - Atualizar filme
-        5 - Deletar filme
-        6 - Sair
-        """)
+#     except ValueError:
+#         print("Erro: ano e duração devem ser números inteiros.")
 
-        opcao = input("> ")
+#     except sqlite3.Error as erro:
+#         print(f"Erro ao adicionar filme: {erro}")
 
-        if opcao == "0":
-            criar_tabela(conexao)
 
-        elif opcao == "1":
-            print("\nVamos adicionar um novo filme.")
-            add_filme(conexao)
+# # 4. Programa principal
+# conexao = conectar_banco()
 
-        elif opcao == "2":
-            print("Função de listar filmes ainda será criada.")
+# if conexao is not None:
 
-        elif opcao == "3":
-            print("Função de pesquisar ainda será criada.")
+#     criar_tabela(conexao)
 
-        elif opcao == "4":
-            print("Função de atualizar ainda será criada.")
+#     while True:
+#         print("""
+#         ===== MENU DE FILMES =====
 
-        elif opcao == "5":
-            print("Função de deletar ainda será criada.")
+#         0 - Criar tabela de filmes
+#         1 - Adicionar novo filme
+#         2 - Listar todos os filmes
+#         3 - Pesquisar filme
+#         4 - Atualizar filme
+#         5 - Deletar filme
+#         6 - Sair
+#         """)
 
-        elif opcao == "6":
-            print("Encerrando o programa...")
-            break
+#         opcao = input("> ")
 
-        else:
-            print("Opção inválida!")
+#         if opcao == "0":
+#             criar_tabela(conexao)
 
-    conexao.close()
-    print("Conexão com o banco encerrada.")
+#         elif opcao == "1":
+#             print("\nVamos adicionar um novo filme.")
+#             add_filme(conexao)
 
-else:
-    print("Não foi possível iniciar o programa.")
+#         elif opcao == "2":
+#             print("Função de listar filmes ainda será criada.")
+
+#         elif opcao == "3":
+#             print("Função de pesquisar ainda será criada.")
+
+#         elif opcao == "4":
+#             print("Função de atualizar ainda será criada.")
+
+#         elif opcao == "5":
+#             print("Função de deletar ainda será criada.")
+
+#         elif opcao == "6":
+#             print("Encerrando o programa...")
+#             break
+
+#         else:
+#             print("Opção inválida!")
+
+#     conexao.close()
+#     print("Conexão com o banco encerrada.")
+
+# else:
+#     print("Não foi possível iniciar o programa.")
