@@ -1,8 +1,8 @@
+## Pesqiosar: MVC - quebrar esse programa em 3 partes
+# Declaração das variáveis globais para controle de escopo
 import sqlite3
 import tkinter as tk
 from tkinter import messagebox
-## Pesqiosar: MVC - quebrar esse programa em 3 partes
-# Declaração das variáveis globais para controle de escopo
 global entry_usuario, entry_senha, janela, frame_login, frame_interna
 
 # =============== MODEL ====================
@@ -72,41 +72,41 @@ def abrir_janela_principal():
     
     # Janela Principal
     janela = tk.Tk()
-    janela.title("Sistema com Frames")
+    janela.title("Tela de Login")
     janela.geometry("400x500")
-    janela.configure(bg="#76cfff")
+    janela.configure(bg="#1877f2")
     # janela.resizable(False, False)
     
     # 1. FRAME DE LOGIN (Container principal do login)
-    frame_login = tk.Frame(janela, bg="#9c3ff3", bd=1, relief="solid")
-    frame_login.pack(padx=40, pady=50, fill="both", expand=True)
+    frame_login = tk.Frame(janela, bg="#242424", bd=1, relief="solid")
+    frame_login.pack(padx=6, pady=8, fill="both", expand=True)
     
     # Conteúdo do Login
-    lbl_titulo = tk.Label(frame_login, text="Seja Bem-vindo", font=("Arial", 18, "bold"), bg="#9c3ff3", fg="#ffffff")
+    lbl_titulo = tk.Label(frame_login, text="Seja Bem-vindo!", font=("Arial", 18, "bold"), bg="#242424", fg="#ffffff")
     lbl_titulo.pack(pady=(30, 20))
     
     # Campo Usuário
-    frame_usuario = tk.Frame(frame_login, bg="#9c3ff3")
+    frame_usuario = tk.Frame(frame_login, bg="#242424")
     frame_usuario.pack(fill="x", padx=25, pady=10)
-    lbl_usuario = tk.Label(frame_usuario, text="Usuário", font=("Arial", 12, "bold"), bg="#9c3ff3", fg="#ffffff")
+    lbl_usuario = tk.Label(frame_usuario, text="Usuário", font=("Arial", 12, "bold"), bg="#242424", fg="#ffffff")
     lbl_usuario.pack(anchor="w", pady=(0, 5))
-    entry_usuario = tk.Entry(frame_usuario, font=("Arial", 11), bd=1, relief="solid")
+    entry_usuario = tk.Entry(frame_usuario,bg="#555555", fg="#ffffff", font=("Arial", 11), bd=3, relief="sunken", justify="center")
     entry_usuario.pack(fill="x", ipady=5)
     
     # Campo Senha
-    frame_senha = tk.Frame(frame_login, bg="#9c3ff3")
+    frame_senha = tk.Frame(frame_login, bg="#242424")
     frame_senha.pack(fill="x", padx=25, pady=10)
-    lbl_senha = tk.Label(frame_senha, text="Senha", font=("Arial", 12, "bold"), bg="#9c3ff3", fg="#ffffff")
+    lbl_senha = tk.Label(frame_senha, text="Senha", font=("Arial", 12, "bold"), bg="#242424", fg="#ffffff")
     lbl_senha.pack(anchor="w", pady=(0, 5))
-    entry_senha = tk.Entry(frame_senha, font=("Arial", 11), show="*", bd=1, relief="solid")
+    entry_senha = tk.Entry(frame_senha, bg="#555555", fg="#ffffff", font=("Arial", 11), show="*", bd=4, relief="sunken")
     entry_senha.pack(fill="x", ipady=5)
     
     # Botão Entrar
-    frame_acoes = tk.Frame(frame_login, bg="#9c3ff3")
+    frame_acoes = tk.Frame(frame_login, bg="#242424")
     frame_acoes.pack(fill="x", padx=25, pady=30)
-    btn_login = tk.Button(frame_acoes, text="Entrar", font=("Arial", 11, "bold"), bg="#1877f2", fg="#ffffff", bd=1, cursor="hand2", command=realizar_login)
+    btn_login = tk.Button(frame_acoes, text="Entrar", font=("Arial", 11, "bold"), bg="#1877f2", fg="#ffffff", bd=1, cursor="hand2", relief="raised",command=realizar_login)
     btn_login.pack(fill="x", ipady=8)
-    btn_login = tk.Button(frame_acoes, text="Cadastrar", font=("Arial", 11, "bold"), bg="#1877f2", fg="#ffffff", bd=1, cursor="hand2", command=realizar_cadastro)
+    btn_login = tk.Button(frame_acoes, text="Cadastrar", font=("Arial", 11, "bold"), bg="#1877f2", fg="#ffffff", bd=1, cursor="hand2", relief="raised", command=realizar_cadastro)
     btn_login.pack(fill="x", ipady=8)
     
     janela.mainloop()

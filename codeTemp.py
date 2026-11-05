@@ -1,14 +1,22 @@
-# def hello(n):
-#     for i in range(n):
-#         print('Hello Function!')
+import tkinter as tk
 
-# n = int(input())
+root = tk.Tk()
 
-# hello(n)
-while True:
-    def number(inp):
-        res = inp * 2
-        return res
-    inp = int(input())
+# Criando um Entry com algumas propriedades
+var_texto = tk.StringVar(value="Texto inicial")
 
-    number(inp)
+entrada = tk.Entry(
+    root,
+    textvariable=var_texto,
+    width=30,
+    font=("Helvetica", 11),
+    fg="blue",
+    bg="lightyellow",
+    show="*",  # útil para senha
+    relief="sunken",
+    bd=3,
+    justify="center",
+)
+entrada.pack(padx=10, pady=10)
+
+root.mainloop()
